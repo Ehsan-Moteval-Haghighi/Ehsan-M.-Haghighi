@@ -14,7 +14,7 @@ body {
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 10px20px;
+    padding: 10px15px;
 }
 
 .header-content {
@@ -25,8 +25,8 @@ body {
 }
 
 .header-img {
-    width: 150px; /* Base size for the image */height: auto;
-    margin-right: 20px;
+    width: 120px; /* Base size for the image */height: auto;
+    margin-right: 15px;
     max-width: 100%; /* Responsive width */
 }
 
@@ -36,25 +36,26 @@ body {
 
 .header-texth1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .header-textp {
     margin: 5px0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Main Content */main {
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 15px;
     flex-wrap: wrap; /* Wrap content on smaller screens */
 }
 
 .sidebar {
-    width: 25%;
-    background-color: #f4f4f4;
-    padding: 15px;
+    width: 100%;
+    max-width: 300px; /* Maximum width for sidebar */background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
 .sidebarh2 {
@@ -80,8 +81,8 @@ body {
 }
 
 .content {
-    width: 75%;
-    padding: 15px;
+    flex: 1;
+    padding: 10px;
 }
 
 /* Footer Styles */footer {
@@ -89,21 +90,20 @@ body {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: relative; /* Changed from fixed to relative */bottom: 0;
     width: 100%;
 }
 
 /* Responsive Design */@mediaonly screen and (max-width: 768px) {
     .header-img {
-        width: 120px; /* Smaller size for tablets */
+        width: 100px; /* Smaller size for tablets */
     }
 
     .header-texth1 {
-        font-size: 20px; /* Adjusted text size */
+        font-size: 18px; /* Adjusted text size */
     }
 
     .header-textp {
-        font-size: 14px; /* Adjusted text size */
+        font-size: 12px; /* Adjusted text size */
     }
 
     main {
@@ -111,7 +111,7 @@ body {
     }
 
     .sidebar {
-        width: 100%; /* Full width on smaller screens */margin-bottom: 20px; /* Space below sidebar */
+        width: 100%; /* Full width on smaller screens */margin-bottom: 15px; /* Space below sidebar */
     }
 
     .content {
@@ -121,15 +121,15 @@ body {
 
 @mediaonly screen and (max-width: 480px) {
     .header-img {
-        width: 100px; /* Even smaller size for mobile */
+        width: 80px; /* Even smaller size for mobile */
     }
 
     .header-texth1 {
-        font-size: 18px; /* Smaller text size */
+        font-size: 16px; /* Smaller text size */
     }
 
     .header-textp {
-        font-size: 12px; /* Smaller text size */
+        font-size: 10px; /* Smaller text size */
     }
 
     .sidebar {
@@ -137,7 +137,7 @@ body {
     }
 
     .content {
-        width: 100%; /* Full width on mobile */
+        width: 100%; /* Full width on mobile */padding: 10px;
     }
 
     footer {
