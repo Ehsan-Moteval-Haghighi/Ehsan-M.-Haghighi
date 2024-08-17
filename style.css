@@ -43,117 +43,17 @@ header {
 
 main {
     display: flex;
-    flex: 0; /* Take up remaining space */
-    padding: 20px;
-    overflow: hidden; /* Hide overflow */
-}
-
-.sidebar {
-    width: 20%; /* Adjust width as needed */
-    background-color: #f4f4f4;
-    padding: 15px;
-    box-sizing: border-box; /* Include padding in width calculation */
-}
-
-.sidebar h2 {
-    margin-top: 0;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.sidebar ul li a:hover {
-    text-decoration: underline;
-}
-
-.jupyter-file {
-    width: 80%; /* Adjust width to take up remaining space */
-    padding: 0; /* Remove padding to make iframe fit */
-    box-sizing: border-box; /* Include padding in width calculation */
-    height: 100%; /* Ensure full height within main */
-}
-
-.jupyter-file iframe {
-    width: 100%;
-    height: 100%;
-    border: none; /* Remove border for cleaner look */
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column; /* Stack header, main, and footer vertically */
-}
-
-header {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    flex-shrink: 0; /* Prevent the header from shrinking */
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.header-img {
-    width: 300px;
-    height: auto;
-    margin-right: 20px;
-}
-
-.header-text {
-    text-align: left;
-}
-
-.header-text h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.header-text p {
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-main {
-    display: flex;
     flex: 1; /* Take up remaining space */
     padding: 20px;
     overflow: hidden; /* Hide overflow */
 }
 
 .sidebar {
-    width: 20%; /* Adjust width as needed */
+    width: 20%; /* Fixed width */
     background-color: #f4f4f4;
     padding: 15px;
     box-sizing: border-box; /* Include padding in width calculation */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .sidebar h2 {
@@ -179,7 +79,7 @@ main {
 }
 
 .jupyter-file {
-    width: 80%; /* Adjust width to take up remaining space */
+    flex: 1; /* Take up remaining space */
     padding: 0; /* Remove padding to make iframe fit */
     box-sizing: border-box; /* Include padding in width calculation */
     height: 100%; /* Ensure full height within main */
