@@ -83,6 +83,11 @@ body {
 .content {
     flex: 1;
     padding: 10px;
+    text-align: justify; /* Justify the text */
+}
+
+.contentp {
+    margin-bottom: 15px; /* Add space between paragraphs */
 }
 
 /* Footer Styles */footer {
