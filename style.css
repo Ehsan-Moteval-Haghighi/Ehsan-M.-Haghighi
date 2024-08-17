@@ -83,6 +83,16 @@ main {
     text-decoration: underline;
 }
 
+/* Add indentation for submenus */
+.sidebar ul ul {
+    padding-left: 20px; /* Indent submenu items */
+}
+
+.sidebar ul ul li {
+    margin-bottom: 5px; /* Adjust spacing for submenu items */
+}
+
+
 .jupyter-file {
     flex: 1; /* Take up remaining space */
     padding: 10px; /* Remove padding to make iframe fit */
