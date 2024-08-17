@@ -84,7 +84,7 @@ main {
 
 .jupyter-file {
     flex: 1; /* Take up remaining space */
-    padding: 0; /* Remove padding to make iframe fit */
+    padding: 10px; /* Remove padding to make iframe fit */
     box-sizing: border-box; /* Include padding in width calculation */
     height: 100%; /* Ensure full height within main */
 }
