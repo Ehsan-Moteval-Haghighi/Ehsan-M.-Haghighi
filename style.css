@@ -1,33 +1,25 @@
-/* Basic Reset */body, h1, p, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Header Styles */header {
+header {
     display: flex;
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 10px15px;
+    padding: 10px20px;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap; /* Wrap content on smaller screens */
 }
 
 .header-img {
-    width: 300px; /* Base size for the image */height: auto;
-    margin-right: 15px;
-    max-width: 100%; /* Responsive width */
+    width: 300px; /* Larger image size */height: auto;
+    margin-right: 20px; /* Space between image and text */
 }
 
 .header-text {
@@ -36,26 +28,23 @@ body {
 
 .header-texth1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .header-textp {
     margin: 5px0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-/* Main Content */main {
+main {
     display: flex;
-    flex-direction: row;
-    padding: 15px;
-    flex-wrap: wrap; /* Wrap content on smaller screens */
+    padding: 20px;
 }
 
 .sidebar {
-    width: 100%;
-    max-width: 300px; /* Maximum width for sidebar */background-color: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 15px;
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 15px;
 }
 
 .sidebarh2 {
@@ -81,66 +70,16 @@ body {
 }
 
 .content {
-    flex: 1;
-    padding: 10px;
+    width: 75%;
+    padding: 15px;
 }
 
-/* Footer Styles */footer {
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-}
-
-/* Responsive Design */@mediaonly screen and (max-width: 768px) {
-    .header-img {
-        width: 100px; /* Smaller size for tablets */
-    }
-
-    .header-texth1 {
-        font-size: 18px; /* Adjusted text size */
-    }
-
-    .header-textp {
-        font-size: 12px; /* Adjusted text size */
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%; /* Full width on smaller screens */margin-bottom: 15px; /* Space below sidebar */
-    }
-
-    .content {
-        width: 100%; /* Full width on smaller screens */
-    }
-}
-
-@mediaonly screen and (max-width: 480px) {
-    .header-img {
-        width: 80px; /* Even smaller size for mobile */
-    }
-
-    .header-texth1 {
-        font-size: 16px; /* Smaller text size */
-    }
-
-    .header-textp {
-        font-size: 10px; /* Smaller text size */
-    }
-
-    .sidebar {
-        display: none; /* Hide sidebar on mobile */
-    }
-
-    .content {
-        width: 100%; /* Full width on mobile */padding: 10px;
-    }
-
-    footer {
-        padding: 5px; /* Reduced padding on mobile */
-    }
 }
