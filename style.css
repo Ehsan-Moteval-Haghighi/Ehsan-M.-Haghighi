@@ -47,6 +47,7 @@ main {
     padding: 40px; /* Add padding around the main content */
     overflow: hidden; /* Hide overflow */
     padding-left: 20px;
+    text-align: justify;
     box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
