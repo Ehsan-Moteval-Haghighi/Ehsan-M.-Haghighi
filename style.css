@@ -1,4 +1,3 @@
-/* Ensure the body covers full viewport height */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,7 +6,6 @@ body {
     flex-direction: column; /* Stack header, main, and footer vertically */
 }
 
-/* Header styling */
 header {
     display: flex;
     align-items: center;
@@ -43,7 +41,6 @@ header {
     font-size: 16px;
 }
 
-/* Main content styling */
 main {
     display: flex;
     flex: 1; /* Take up remaining space */
@@ -54,7 +51,6 @@ main {
     box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
-/* Sidebar styling */
 .sidebar {
     width: 20%; /* Fixed width */
     min-width: 200px; /* Minimum width to prevent too much shrinking */
@@ -69,49 +65,24 @@ main {
     margin-top: 0;
 }
 
-/* Unordered list styling for sidebar */
 .sidebar ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* Ensure no extra margin */
 }
 
-/* List item styling */
 .sidebar ul li {
-    margin-bottom: 10px; /* Spacing between list items */
+    margin-bottom: 10px;
 }
 
-/* Link styling */
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
-    display: block; /* Ensure the entire list item is clickable */
-    padding: 10px; /* Add padding for better click area */
-    border-radius: 4px; /* Rounded corners */
 }
 
-/* Hover effect for links */
 .sidebar ul li a:hover {
     text-decoration: underline;
-    background-color: #ddd; /* Highlight background on hover */
 }
 
-/* Submenu styling */
-.submenu {
-    display: none;
-    padding-left: 20px; /* Indentation for submenus */
-}
-
-.sidebar ul li:hover .submenu {
-    display: block;
-}
-
-/* Ensure consistent spacing for submenu items */
-.sidebar ul li .submenu li {
-    margin-bottom: 5px; /* Spacing between submenu items */
-}
-
-/* Jupyter file styling */
 .jupyter-file {
     flex: 1; /* Take up remaining space */
     padding: 10px; /* Remove padding to make iframe fit */
@@ -125,7 +96,6 @@ main {
     border: none; /* Remove border for cleaner look */
 }
 
-/* Footer styling */
 footer {
     background-color: #333;
     color: #fff;
