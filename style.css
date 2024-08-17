@@ -42,10 +42,12 @@ header {
 }
 
 main {
-    display: block; /* Change from flex to block to stack child elements vertically */
+    display: flex;
     flex: 1; /* Take up remaining space */
     padding: 40px; /* Add padding around the main content */
     overflow: hidden; /* Hide overflow */
+    padding-left: 20px;
+    text-align: justify;
     box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
@@ -56,24 +58,42 @@ main {
     padding: 15px;
     margin-right: 20px;
     box-sizing: border-box; /* Include padding in width calculation */
-    float: left; /* Ensure sidebar is on the left */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
-.content {
-    float: left; /* Ensure content is on the left */
-    width: calc(80% - 20px); /* Adjust width considering the sidebar and margin */
+.sidebar h2 {
+    margin-top: 0;
 }
 
-.application_AI {
-    clear: both; /* Ensure the image appears below the floated elements */
-    text-align: center;
-    margin-top: 20px;
+.sidebar ul {
+    list-style: none;
+    padding: 0;
 }
 
-.application_AI img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #000; /* Optional: adds a border around the image */
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.jupyter-file {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Remove padding to make iframe fit */
+    box-sizing: border-box; /* Include padding in width calculation */
+    height: 100%; /* Ensure full height within main */
+}
+
+.jupyter-file iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove border for cleaner look */
 }
 
 footer {
@@ -84,4 +104,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* application_AI */
+.application_AI {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.application_AI img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000; /* Optional: adds a border around the image */
 }
