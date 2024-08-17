@@ -1,9 +1,15 @@
+/* Basic Reset */body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-header {
+/* Header Styles */header {
     display: flex;
     align-items: center;
     background-color: #333;
@@ -15,11 +21,13 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
 }
 
 .header-img {
-    width: 300px; /* Adjust size as needed */height: auto;
-    margin-right: 20px; /* Space between image and text */
+    width: 150px; /* Base size for the image */height: auto;
+    margin-right: 20px;
+    max-width: 100%; /* Responsive width */
 }
 
 .header-text {
@@ -36,9 +44,11 @@ header {
     font-size: 16px;
 }
 
-main {
+/* Main Content */main {
     display: flex;
+    flex-direction: row;
     padding: 20px;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
 }
 
 .sidebar {
@@ -74,12 +84,63 @@ main {
     padding: 15px;
 }
 
-footer {
+/* Footer Styles */footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Changed from fixed to relative */bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design */@mediaonly screen and (max-width: 768px) {
+    .header-img {
+        width: 120px; /* Smaller size for tablets */
+    }
+
+    .header-texth1 {
+        font-size: 20px; /* Adjusted text size */
+    }
+
+    .header-textp {
+        font-size: 14px; /* Adjusted text size */
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */margin-bottom: 20px; /* Space below sidebar */
+    }
+
+    .content {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@mediaonly screen and (max-width: 480px) {
+    .header-img {
+        width: 100px; /* Even smaller size for mobile */
+    }
+
+    .header-texth1 {
+        font-size: 18px; /* Smaller text size */
+    }
+
+    .header-textp {
+        font-size: 12px; /* Smaller text size */
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar on mobile */
+    }
+
+    .content {
+        width: 100%; /* Full width on mobile */
+    }
+
+    footer {
+        padding: 5px; /* Reduced padding on mobile */
+    }
 }
