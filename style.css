@@ -25,7 +25,7 @@ body {
 }
 
 .header-img {
-    width: 120px; /* Base size for the image */height: auto;
+    width: 300px; /* Base size for the image */height: auto;
     margin-right: 15px;
     max-width: 100%; /* Responsive width */
 }
@@ -83,11 +83,6 @@ body {
 .content {
     flex: 1;
     padding: 10px;
-    text-align: justify; /* Justify the text */
-}
-
-.contentp {
-    margin-bottom: 15px; /* Add space between paragraphs */
 }
 
 /* Footer Styles */footer {
