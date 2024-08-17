@@ -39,7 +39,6 @@ header {
 main {
     display: flex;
     padding: 20px;
-    text-align: justify; /* Justify the text */
 }
 
 .sidebar {
@@ -74,6 +73,10 @@ main {
     width: 75%;
     padding: 15px;
     text-align: justify; /* Justify the text */
+}
+
+.contentp {
+    margin-bottom: 15px; /* Add space between paragraphs */
 }
 
 footer {
