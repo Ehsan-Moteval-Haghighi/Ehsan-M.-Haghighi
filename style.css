@@ -86,11 +86,13 @@ main {
 /* Add indentation for submenus */
 .sidebar ul ul {
     padding-left: 20px; /* Indent submenu items */
+    margin: 0; /* Remove default margin */
 }
 
 .sidebar ul ul li {
     margin-bottom: 5px; /* Adjust spacing for submenu items */
 }
+
 
 
 .jupyter-file {
