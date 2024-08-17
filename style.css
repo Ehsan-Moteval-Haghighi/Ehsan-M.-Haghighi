@@ -50,6 +50,7 @@ main {
 
 .sidebar {
     width: 20%; /* Fixed width */
+    min-width: 200px; /* Minimum width to prevent too much shrinking */
     background-color: #f4f4f4;
     padding: 15px;
     box-sizing: border-box; /* Include padding in width calculation */
