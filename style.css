@@ -107,12 +107,12 @@ footer {
 }
 
 /* New Photo Styles */
-.new-photo {
+.application_Artificial_Intelligence {
     text-align: center;
     margin-top: 20px;
 }
 
-.new-photo img {
+.application_Artificial_Intelligence img {
     max-width: 100%;
     height: auto;
     border: 2px solid #000; /* Optional: adds a border around the image */
