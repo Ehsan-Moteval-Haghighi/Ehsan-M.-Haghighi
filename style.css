@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    padding: 10px; /* Add padding around the main content */
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column; /* Stack header, main, and footer vertically */
