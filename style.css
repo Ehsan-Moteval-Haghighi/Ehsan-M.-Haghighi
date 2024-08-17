@@ -44,8 +44,9 @@ header {
 main {
     display: flex;
     flex: 1; /* Take up remaining space */
-    padding: 20px;
+    padding: 20px; /* Add padding around the main content */
     overflow: hidden; /* Hide overflow */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
 .sidebar {
