@@ -42,7 +42,6 @@ header {
 }
 
 main {
-    font-family: 'Roboto', sans-serif
     display: flex;
     flex: 1; /* Take up remaining space */
     padding: 40px; /* Add padding around the main content */
