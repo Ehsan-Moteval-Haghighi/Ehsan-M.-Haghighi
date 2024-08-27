@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1: Neural Network Optimization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="sidebar">
+            <h2>Projects</h2>
+            <ul>    
+                <li><a href="index.html">First Page</a></li>
+                <li><a href="#">Artificial Intelligence</a>
+                    <ul class="submenu">
+                        <li><a href="Project1.html">Rule Based Recommender System</a></li>
+                        <li><a href="Project2.html">Adapting and Aligning Large Language Models (LLM)</a></li>
+                        <li><a href="Project3.html">Project 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="jupyter-file">
+            <h2>Jupyter Notebook</h2>
+            <!-- Ensure the src attribute matches the filename and path -->
+            <iframe src="Fine_Tune_LLM.html" width="100%" height="100%"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ehsan Motevali Haghighi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
