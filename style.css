@@ -63,7 +63,7 @@ main {
     max-height: calc(100vh - 150px); /* Adjust height based on your layout; this allows space for the header and footer */
     overflow-y: auto; /* Enable vertical scrolling */
     padding-right: 15px; /* Space for scrollbar */
-    font-size: 10px; /* Adjust the font size as desired */
+    font-size: 14px; /* Adjust the font size as desired */
 }
 
 .sidebar h2 {
