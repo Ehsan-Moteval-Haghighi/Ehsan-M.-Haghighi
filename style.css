@@ -60,6 +60,9 @@ main {
     margin-right: 20px;
     box-sizing: border-box; /* Include padding in width calculation */
     flex-shrink: 0; /* Prevent shrinking */
+    max-height: calc(100vh - 150px); /* Adjust height based on your layout; this allows space for the header and footer */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 15px; /* Space for scrollbar */
 }
 
 .sidebar h2 {
